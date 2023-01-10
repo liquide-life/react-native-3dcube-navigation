@@ -9,8 +9,8 @@ import {
 } from 'react-native';
 const { width, height } = Dimensions.get('window');
 
-const PESPECTIVE = Platform.OS === 'ios' ? 2.38 : 1.7;
-const TR_POSITION = Platform.OS === 'ios' ? 2 : 1.5;
+const PESPECTIVE = Platform.OS === 'ios' ? 2.38 : 6;
+const TR_POSITION = Platform.OS === 'ios' ? 2 : 1;
 
 export default class CubeNavigationHorizontal extends React.Component {
   constructor(props) {
@@ -182,7 +182,7 @@ export default class CubeNavigationHorizontal extends React.Component {
         pageX + width - 250,
         pageX + width
       ]),
-      outputRange: padOutput([0, 0.6, 1, 0.6, 0]),
+      outputRange: padOutput([1, 1, 1, 1, 0]),
       extrapolate: 'clamp'
     });
 
